@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hari Prasath S | Senior BI Developer & SAP Business One Consultant</title>
+  <meta name="description" content="Portfolio of Hari Prasath S — SAP Business One Consultant & Senior BI Developer specializing in SAP HANA, Crystal Reports, SSRS, Dynamic SQL optimization, and enterprise WMS integration." />
+  <meta name="keywords" content="Hari Prasath S, BI Developer, SAP Business One, SAP HANA, Crystal Reports, SSRS, SQL Developer, PL-SQL, WMS Integration, Business Intelligence Portfolio" />
+  <meta name="author" content="Hari Prasath S" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Hari Prasath S | BI Developer & SAP Business One Specialist" />
+  <meta property="og:description" content="3+ Years turning complex enterprise data into high-performance decision intelligence." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       CSS RESET & VARIABLES (Ultra-Luxury Obsidian & Champagne Gold Theme)
+       ========================================================================== */
+    :root {
+      --bg-base: #07090e;
+      --bg-surface: #0d111a;
+      --bg-surface-elevated: #131926;
+      --bg-surface-glass: rgba(13, 17, 26, 0.72);
+      
+      --gold-300: #f5e4b7;
+      --gold-400: #e5c378;
+      --gold-500: #c9a050;
+      --gold-600: #9e782f;
+      --gold-glow: rgba(201, 160, 80, 0.35);
+
+      --cyan-400: #38bdf8;
+      --cyan-glow: rgba(56, 189, 248, 0.25);
+      
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      
+      --border-subtle: rgba(255, 255, 255, 0.07);
+      --border-gold: rgba(201, 160, 80, 0.3);
+      --border-gold-hover: rgba(201, 160, 80, 0.7);
+
+      --ease-fluid: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --transition-fast: 0.18s var(--ease-fluid);
+      --transition-smooth: 0.38s var(--ease-fluid);
+      --transition-slow: 0.7s var(--ease-fluid);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+      min-height: 100vh;
+      position: relative;
+      background: radial-gradient(circle at 50% 0%, #141b2b 0%, #07090e 65%);
+    }
+
+    ::selection {
+      background: var(--gold-500);
+      color: #000;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-base);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #252e42;
+      border-radius: 4px;
+      border: 1px solid var(--border-gold);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--gold-500);
+    }
+
+    /* Typography Utilities */
+    .font-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Gradient Texts */
+    .text-gradient-gold {
+      background: linear-gradient(135deg, #ffffff 10%, #f7e7c4 45%, #c9a050 85%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-cyan {
+      background: linear-gradient(135deg, #e0f2fe 0%, #38bdf8 60%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Kinetic Glow & Shadows */
+    .glow-gold {
+      box-shadow: 0 0 30px -5px var(--gold-glow);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 30px -5px var(--cyan-glow);
+    }
+
+    /* Glass Panels */
+    .glass-card {
+      background: var(--bg-surface-glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+    }
+
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(201, 160, 80, 0.08), transparent 40%);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      pointer-events: none;
+    }
+
+    .glass-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.5), 0 0 20px -3px var(--gold-glow);
+    }
+
+    .glass-card:hover::before {
+      opacity: 1;
+    }
+
+    /* Custom Cursor */
+    #cursor-dot, #cursor-ring {
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease;
+    }
+    #cursor-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--gold-400);
+      box-shadow: 0 0 10px var(--gold-400);
+    }
+    #cursor-ring {
+      width: 36px;
+      height: 36px;
+      border: 1.5px solid rgba(229, 195, 120, 0.5);
+      transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+    }
+    body:hover #cursor-dot, body:hover #cursor-ring {
+      opacity: 1;
+    }
+
+    @media (pointer: coarse) {
+      #cursor-dot, #cursor-ring { display: none !important; }
+    }
+
+    /* Canvas Ambient Visualizer */
+    #ambient-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.55;
+    }
+
+    /* Container */
+    .container-wide {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Buttons */
+    .btn-gold {
+      background: linear-gradient(135deg, #e5c378 0%, #c9a050 100%);
+      color: #07090e;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      border: none;
+      border-radius: 10px;
+      padding: 13px 28px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all var(--transition-fast);
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(201, 160, 80, 0.3);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 30px rgba(201, 160, 80, 0.5);
+      filter: brightness(1.08);
+    }
+    .btn-gold:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-primary);
+      font-weight: 600;
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 13px 26px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all var(--transition-fast);
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+    }
+    .btn-outline:hover {
+      border-color: var(--gold-500);
+      background: rgba(201, 160, 80, 0.08);
+      color: var(--gold-300);
+      transform: translateY(-2px);
+    }
+
+    /* Badge & Micro Tags */
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 14px;
+      border-radius: 9999px;
+      background: rgba(201, 160, 80, 0.08);
+      border: 1px solid rgba(201, 160, 80, 0.25);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-400);
+    }
+    .badge-pill .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 10px #10b981;
+      animation: pulseGreen 2s infinite ease-in-out;
+    }
+    @keyframes pulseGreen {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+    }
+
+    /* Section Header */
+    .section-eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-400);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 1px;
+      background: var(--gold-400);
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(34px, 4.2vw, 54px);
+      font-weight: 700;
+      line-height: 1.12;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      max-width: 620px;
+    }
+
+    /* Interactive Live SQL Console */
+    .sql-console {
+      background: #080c14;
+      border: 1px solid #1e283d;
+      border-radius: 14px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .sql-bar {
+      background: #101624;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #1e283d;
+    }
+    .traffic-lights {
+      display: flex;
+      gap: 6px;
+    }
+    .traffic-lights span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .light-red { background: #ef4444; }
+    .light-yellow { background: #f59e0b; }
+    .light-green { background: #10b981; }
+
+    /* Interactive Tabs */
+    .tab-btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: rgba(56, 189, 248, 0.35);
+      color: var(--cyan-400);
+    }
+
+    /* Timeline component */
+    .timeline-item {
+      position: relative;
+      padding-left: 36px;
+      padding-bottom: 42px;
+    }
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 9px;
+      top: 10px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--gold-500) 0%, rgba(201, 160, 80, 0.1) 100%);
+    }
+    .timeline-dot {
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--bg-surface);
+      border: 2px solid var(--gold-400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 12px var(--gold-glow);
+    }
+    .timeline-dot::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold-400);
+    }
+
+    /* Modal dialog */
+    #project-modal {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    #project-modal.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Notification Toast */
+    #toast {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 10000;
+      background: #111827;
+      border: 1px solid var(--gold-500);
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px var(--gold-glow);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 992px) {
+      #hero-grid, #about-grid, #exp-grid, #edu-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+      }
+      .desktop-nav {
+        display: none !important;
+      }
+      #mobile-nav-toggle {
+        display: flex !important;
+      }
+    }
+
+    @media (max-width: 640px) {
+      #pillars-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .sql-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .sql-bar > div:last-child {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+      .section-title {
+        font-size: 32px !important;
+      }
+    }
+
+    #mobile-drawer {
+      position: fixed;
+      top: 74px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(7, 9, 14, 0.98);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      z-index: 49;
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #mobile-drawer.open {
+      transform: translateX(0);
+    }
+    .mobile-nav-link {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mobile-nav-link:hover {
+      color: var(--gold-400);
+    }
+
+    /* Print Resume Format */
+    @media print {
+      body {
+        background: #fff !important;
+        color: #111 !important;
+      }
+      #ambient-canvas, #cursor-dot, #cursor-ring, nav, #sql-simulator-section, .btn-gold, .btn-outline, #contact-form-card, footer {
+        display: none !important;
+      }
+      .container-wide {
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+      .glass-card {
+        background: #fff !important;
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+        color: #111 !important;
+        page-break-inside: avoid;
+      }
+      .text-gradient-gold, .text-gradient-cyan {
+        -webkit-text-fill-color: #111 !important;
+        color: #111 !important;
+      }
+      h1, h2, h3, p, span, li {
+        color: #111 !important;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-amber-400 selection:text-black">
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Ambient Interactive Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Sticky Luxury Header -->
+  <header id="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; transition: all 0.3s ease; border-bottom: 1px solid rgba(255, 255, 255, 0.06); background: rgba(7, 9, 14, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
+    <div class="container-wide" style="display: flex; align-items: center; justify-content: space-between; height: 74px;">
+      <!-- Logo / Monogram -->
+      <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+        <div style="width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, rgba(229,195,120,0.2) 0%, rgba(201,160,80,0.05) 100%); border: 1.5px solid var(--gold-400); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(201,160,80,0.25);">
+          <span class="font-serif" style="font-size: 20px; font-weight: 700; color: var(--gold-300);">HP</span>
+        </div>
+        <div>
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 0.02em; display: block; line-height: 1.1;">Hari Prasath S</span>
+          <span class="font-mono" style="font-size: 10px; color: var(--gold-400); letter-spacing: 0.1em; text-transform: uppercase;">BI & SAP B1 Specialist</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav style="display: flex; align-items: center; gap: 28px;" class="desktop-nav">
+        <a href="#about" class="nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 13px; font-weight: 600; transition: color 0.2s;">About</a>
+        <a href="#skills" class="nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 13px; font-weight: 600; transition: color 0.2s;">Skills & Tech</a>
+        <a href="#experience" class="nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 13px; font-weight: 600; transition: color 0.2s;">Experience</a>
+        <a href="#projects" class="nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 13px; font-weight: 600; transition: color 0.2s;">Projects</a>
+        <a href="#simulator" class="nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 13px; font-weight: 600; transition: color 0.2s;">Live Studio</a>
+        <a href="#contact" class="nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 13px; font-weight: 600; transition: color 0.2s;">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <!-- Audio SFX Toggle Button -->
+        <button id="sfx-toggle-btn" onclick="toggleAudioSFX()" class="btn-outline" style="padding: 8px 12px; font-size: 11px; gap: 5px;" title="Toggle Futuristic Audio Micro-Effects">
+          <span id="sfx-icon">🔇</span>
+          <span id="sfx-status" class="font-mono">SFX</span>
+        </button>
+
+        <!-- Print Resume Button -->
+        <button onclick="window.print()" class="btn-outline" style="padding: 9px 16px; font-size: 12px; gap: 6px;" title="Print or save as high-fidelity executive resume PDF">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+          <span style="display: inline-block;">PDF CV</span>
+        </button>
+
+        <a href="#contact" class="btn-gold" style="padding: 9px 18px; font-size: 13px;">
+          <span>Hire Me</span>
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-nav-toggle" onclick="toggleMobileNav()" style="display: none; width: 40px; height: 40px; border-radius: 8px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: #fff; align-items: center; justify-content: center; cursor: pointer;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-drawer">
+    <a href="#about" class="mobile-nav-link" onclick="toggleMobileNav()"><span>About</span> <span>→</span></a>
+    <a href="#skills" class="mobile-nav-link" onclick="toggleMobileNav()"><span>Skills &amp; Tech</span> <span>→</span></a>
+    <a href="#experience" class="mobile-nav-link" onclick="toggleMobileNav()"><span>Experience</span> <span>→</span></a>
+    <a href="#projects" class="mobile-nav-link" onclick="toggleMobileNav()"><span>Key Projects</span> <span>→</span></a>
+    <a href="#simulator" class="mobile-nav-link" onclick="toggleMobileNav()"><span>HANA SQL Studio</span> <span>→</span></a>
+    <a href="#contact" class="mobile-nav-link" onclick="toggleMobileNav()"><span>Contact &amp; Hire</span> <span>→</span></a>
+    <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 12px;">
+      <button onclick="window.print(); toggleMobileNav();" class="btn-outline" style="justify-content: center;">Print / Download Resume PDF</button>
+      <a href="mailto:hari.saravanan1708@gmail.com" class="btn-gold" style="justify-content: center;">Send Email</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section id="top" style="padding-top: 150px; padding-bottom: 90px; position: relative;">
+    <div class="container-wide">
+      <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center;" id="hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div>
+          <!-- Status Pill -->
+          <div style="margin-bottom: 24px;">
+            <div class="badge-pill">
+              <span class="pulse-dot"></span>
+              <span>Open to Immediate Opportunities • Chennai / Remote</span>
+            </div>
+          </div>
+
+          <!-- Main Hero Title -->
+          <h1 class="font-serif text-gradient-gold" style="font-size: clamp(44px, 5.8vw, 80px); font-weight: 700; line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 18px;">
+            Hari Prasath S
+          </h1>
+
+          <p class="font-mono" style="font-size: clamp(14px, 1.8vw, 17px); color: var(--gold-400); font-weight: 500; letter-spacing: 0.05em; margin-bottom: 24px;">
+            BI Developer &nbsp;•&nbsp; SAP Business One &nbsp;•&nbsp; SAP HANA &nbsp;•&nbsp; Crystal Reports &nbsp;•&nbsp; SSRS
+          </p>
+
+          <p style="font-size: 18px; line-height: 1.75; color: #cbd5e1; max-width: 580px; margin-bottom: 38px;">
+            Three years of production excellence architecting business intelligence pipelines, optimizing high-throughput dynamic SQL queries on SAP HANA, and engineering mission-critical Crystal &amp; SSRS reports for real-time executive decision-making.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 48px;">
+            <a href="#simulator" class="btn-gold">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Explore Live Studio</span>
+            </a>
+
+            <a href="mailto:hari.saravanan1708@gmail.com" class="btn-outline">
+              <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>hari.saravanan1708@gmail.com</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/hari-prasath-saravanan-96862b245/" target="_blank" rel="noopener noreferrer" class="btn-outline" title="Connect on LinkedIn">
+              <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24m1.4 9.74v-8.37H5.06v8.37z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Quick Micro Metrics -->
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; border-top: 1px solid var(--border-subtle); padding-top: 26px;">
+            <div>
+              <div class="font-serif" style="font-size: 34px; font-weight: 700; color: #fff; line-height: 1;">3+ <span style="font-size: 20px; color: var(--gold-400);">Yrs</span></div>
+              <div style="font-size: 12px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px;">SAP B1 Experience</div>
+            </div>
+            <div>
+              <div class="font-serif" style="font-size: 34px; font-weight: 700; color: #fff; line-height: 1;">100%</div>
+              <div style="font-size: 12px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px;">Data Precision (DTW)</div>
+            </div>
+            <div>
+              <div class="font-serif" style="font-size: 34px; font-weight: 700; color: #fff; line-height: 1;">Sub-Sec</div>
+              <div style="font-size: 12px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px;">HANA Query Execution</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual: Holographic Executive Identity Card -->
+        <div style="display: flex; justify-content: center; position: relative;">
+          <!-- Ambient Glow Orb -->
+          <div style="position: absolute; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, rgba(201, 160, 80, 0.22) 0%, rgba(56, 189, 248, 0.08) 50%, transparent 70%); filter: blur(40px); pointer-events: none;"></div>
+
+          <div class="glass-card" style="width: 100%; max-width: 440px; padding: 32px; border-radius: 24px; border: 1px solid rgba(201, 160, 80, 0.25); box-shadow: 0 25px 60px rgba(0,0,0,0.7);">
+            <!-- Card Top Header -->
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <div style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, #1e2638 0%, #0d121c 100%); border: 2px solid var(--gold-400); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 20px rgba(201,160,80,0.3);">
+                  <span class="font-serif" style="font-size: 30px; font-weight: 700; color: var(--gold-300);">HP</span>
+                </div>
+                <div>
+                  <h3 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 3px;">Hari Prasath S</h3>
+                  <p class="font-mono" style="font-size: 12px; color: var(--cyan-400);">Chennai, TN, India</p>
+                </div>
+              </div>
+              <span class="font-mono" style="font-size: 11px; color: #10b981; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 10px; border-radius: 999px;">● ACTIVE</span>
+            </div>
+
+            <!-- Role Highlight -->
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 14px 16px; margin-bottom: 20px;">
+              <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px;">Current Role</div>
+              <div style="font-size: 14px; font-weight: 700; color: #fff;">SAP Business One Consultant</div>
+              <div style="font-size: 13px; color: var(--gold-400); margin-top: 2px;">Avaniko Technologies Pvt. Ltd. (2023 – Present)</div>
+            </div>
+
+            <!-- Stack Tags -->
+            <div style="margin-bottom: 24px;">
+              <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 10px;">Core Engineering Stack</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">SAP B1 HANA</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">SQL / PL-SQL</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">Crystal Reports</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">SSRS</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">WMS Sync</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">DTW Migration</span>
+              </div>
+            </div>
+
+            <!-- Fast Contact Row -->
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 18px; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 11px; color: var(--text-muted); display: block;">Direct Mobile</span>
+                <a href="tel:+917010018929" style="font-size: 13px; font-weight: 700; color: #fff; text-decoration: none;">+91 7010018929</a>
+              </div>
+              <button onclick="copyToClipboard('hari.saravanan1708@gmail.com', 'Email address copied!')" class="btn-outline" style="padding: 7px 12px; font-size: 11px; gap: 4px;">
+                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <span>Copy Email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: ABOUT & EXECUTIVE VALUE PROPOSITION
+       ========================================================================== -->
+  <section id="about" style="padding: 100px 0; border-top: 1px solid var(--border-subtle); background: rgba(13, 17, 26, 0.45);">
+    <div class="container-wide">
+      <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 60px; align-items: start;" id="about-grid">
+        <!-- Eyebrow & Title -->
+        <div>
+          <div class="section-eyebrow">Professional Summary</div>
+          <h2 class="section-title">Bridging Raw SAP Data &amp; C-Suite Decision Clarity.</h2>
+          <p style="font-size: 16px; line-height: 1.8; color: var(--text-secondary); margin-bottom: 24px;">
+            ERP systems are only as powerful as the intelligence extracted from them. In high-velocity environments, slow queries and inaccurate stock figures translate directly into operational bottlenecks.
+          </p>
+          <p style="font-size: 16px; line-height: 1.8; color: var(--text-secondary); margin-bottom: 32px;">
+            Over the past three years at Avaniko Technologies, I have specialized in architecting reporting backbones for enterprise clients across manufacturing, imaging healthcare, and retail distribution—ensuring every metric in SAP Business One matches on-the-ground reality with absolute precision.
+          </p>
+
+          <div style="display: flex; gap: 24px;">
+            <div style="border-left: 2px solid var(--gold-400); padding-left: 14px;">
+              <div style="font-size: 24px; font-weight: 700; color: #fff;">4+ Verticals</div>
+              <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">Imaging, Manufacturing, WMS &amp; Logistics</div>
+            </div>
+            <div style="border-left: 2px solid var(--cyan-400); padding-left: 14px;">
+              <div style="font-size: 24px; font-weight: 700; color: #fff;">100% UAT</div>
+              <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">Flawless user acceptance signoff track record</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Value Pillars Grid -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;" id="pillars-grid">
+          <div class="glass-card" style="padding: 26px;">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(201, 160, 80, 0.12); border: 1px solid var(--gold-400); display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+              <svg width="22" height="22" fill="none" stroke="var(--gold-400)" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <h3 style="font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px;">Automated BI Portals</h3>
+            <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-secondary);">
+              Replaced legacy manual spreadsheet generation with dynamic, web-based executive dashboards integrated directly into SAP HANA views.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 26px;">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(56, 189, 248, 0.12); border: 1px solid var(--cyan-400); display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+              <svg width="22" height="22" fill="none" stroke="var(--cyan-400)" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7zm0 5h16M10 4v16"/></svg>
+            </div>
+            <h3 style="font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px;">Query Optimization</h3>
+            <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-secondary);">
+              Refactored sub-optimal nested joins and procedural logic into indexed SAP HANA calculation models, delivering 4x speedups on large ledgers.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 26px;">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(16, 185, 129, 0.12); border: 1px solid #10b981; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+              <svg width="22" height="22" fill="none" stroke="#10b981" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <h3 style="font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px;">WMS &amp; Stock Synchronization</h3>
+            <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-secondary);">
+              Engineered end-to-end stock visibility reports bridging external warehouse barcode scanners with SAP B1 inventory valuation.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 26px;">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(168, 85, 247, 0.12); border: 1px solid #a855f7; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+              <svg width="22" height="22" fill="none" stroke="#a855f7" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 style="font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px;">Flawless DTW Migration</h3>
+            <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-secondary);">
+              Loaded complex chart of accounts, business partners, item masters, and open balances via Data Transfer Workbench with zero data loss.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: TECHNICAL SKILLS & DOMAIN MASTERY
+       ========================================================================== -->
+  <section id="skills" style="padding: 100px 0;">
+    <div class="container-wide">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 56px;">
+        <div class="section-eyebrow" style="justify-content: center;">Technical Capabilities</div>
+        <h2 class="section-title">Engineered for Accuracy &amp; Scale</h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          An exhaustive toolkit spanning database internals, enterprise report design, and end-to-end ERP implementation lifecycle.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <!-- Card 1: Business Intelligence & Reporting -->
+        <div class="glass-card" style="padding: 30px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div style="font-size: 12px; font-family: 'JetBrains Mono', monospace; color: var(--gold-400); font-weight: 700;">01 // ANALYTICS</div>
+            <span class="badge-pill" style="font-size: 9px; padding: 2px 8px;">ADVANCED</span>
+          </div>
+          <h3 class="font-serif" style="font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 12px;">Business Intelligence</h3>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
+            Transforming transactional data into intuitive, audit-ready operational and financial reports.
+          </p>
+          
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">SAP Business One</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--gold-400);">95%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 95%; height: 100%; background: var(--gold-400);"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Crystal Reports (Advanced Formulas)</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--gold-400);">98%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 98%; height: 100%; background: var(--gold-400);"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">SSRS / Report Builder</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--gold-400);">90%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 90%; height: 100%; background: var(--gold-400);"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Web-Based BI Dashboards</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--gold-400);">92%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 92%; height: 100%; background: var(--gold-400);"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Power BI (Modeling &amp; DAX)</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--gold-400);">78%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 78%; height: 100%; background: var(--gold-400);"></div></div>
+          </ul>
+        </div>
+
+        <!-- Card 2: Database & SQL Mastery -->
+        <div class="glass-card" style="padding: 30px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div style="font-size: 12px; font-family: 'JetBrains Mono', monospace; color: var(--cyan-400); font-weight: 700;">02 // DATABASE</div>
+            <span class="badge-pill" style="font-size: 9px; padding: 2px 8px; border-color: rgba(56,189,248,0.3); color: var(--cyan-400); background: rgba(56,189,248,0.08);">CORE</span>
+          </div>
+          <h3 class="font-serif" style="font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 12px;">Database &amp; SQL</h3>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
+            Deep database fluency spanning column-oriented SAP HANA memory engines and relational SQL.
+          </p>
+
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">SAP HANA Studio &amp; Views</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--cyan-400);">94%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 94%; height: 100%; background: var(--cyan-400);"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">SQL / PL-SQL (Advanced Queries)</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--cyan-400);">96%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 96%; height: 100%; background: var(--cyan-400);"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Stored Procedures &amp; Triggers</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--cyan-400);">92%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 92%; height: 100%; background: var(--cyan-400);"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Query Execution Plan Tuning</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--cyan-400);">88%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 88%; height: 100%; background: var(--cyan-400);"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Dynamic Pivot &amp; Aggregations</span>
+              <span class="font-mono" style="font-size: 12px; color: var(--cyan-400);">95%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 95%; height: 100%; background: var(--cyan-400);"></div></div>
+          </ul>
+        </div>
+
+        <!-- Card 3: Business Process & Analysis -->
+        <div class="glass-card" style="padding: 30px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div style="font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #10b981; font-weight: 700;">03 // ANALYSIS</div>
+            <span class="badge-pill" style="font-size: 9px; padding: 2px 8px; border-color: rgba(16,185,129,0.3); color: #10b981; background: rgba(16,185,129,0.08);">DOMAIN</span>
+          </div>
+          <h3 class="font-serif" style="font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 12px;">Business Analysis</h3>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
+            Translating vague stakeholder requests into bulletproof functional requirements and schema specs.
+          </p>
+
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Business Process Mapping</span>
+              <span class="font-mono" style="font-size: 12px; color: #10b981;">93%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 93%; height: 100%; background: #10b981;"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Requirement Gathering &amp; BRDs</span>
+              <span class="font-mono" style="font-size: 12px; color: #10b981;">95%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 95%; height: 100%; background: #10b981;"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Inventory Valuation &amp; Stock Aging</span>
+              <span class="font-mono" style="font-size: 12px; color: #10b981;">96%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 96%; height: 100%; background: #10b981;"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Financial Trial Balance &amp; Ledger</span>
+              <span class="font-mono" style="font-size: 12px; color: #10b981;">90%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 90%; height: 100%; background: #10b981;"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Cross-Department Data Reconciliation</span>
+              <span class="font-mono" style="font-size: 12px; color: #10b981;">92%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 92%; height: 100%; background: #10b981;"></div></div>
+          </ul>
+        </div>
+
+        <!-- Card 4: ERP Lifecycle & Integration -->
+        <div class="glass-card" style="padding: 30px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div style="font-size: 12px; font-family: 'JetBrains Mono', monospace; color: #c084fc; font-weight: 700;">04 // IMPLEMENTATION</div>
+            <span class="badge-pill" style="font-size: 9px; padding: 2px 8px; border-color: rgba(192,132,252,0.3); color: #c084fc; background: rgba(192,132,252,0.08);">SDLC</span>
+          </div>
+          <h3 class="font-serif" style="font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 12px;">Implementation &amp; DTW</h3>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
+            Hands-on configuration, data migration, and go-live stabilization across multiple enterprise tenants.
+          </p>
+
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">Data Transfer Workbench (DTW)</span>
+              <span class="font-mono" style="font-size: 12px; color: #c084fc;">98%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 98%; height: 100%; background: #c084fc;"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">End-to-End Implementation Cycle</span>
+              <span class="font-mono" style="font-size: 12px; color: #c084fc;">92%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 92%; height: 100%; background: #c084fc;"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">UAT, Go-Live &amp; Support Stabilization</span>
+              <span class="font-mono" style="font-size: 12px; color: #c084fc;">95%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 95%; height: 100%; background: #c084fc;"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">UDF, UDT &amp; Form Customization</span>
+              <span class="font-mono" style="font-size: 12px; color: #c084fc;">94%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 94%; height: 100%; background: #c084fc;"></div></div>
+
+            <li style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+              <span style="color: #e2e8f0;">WMS API &amp; Service Layer Integration</span>
+              <span class="font-mono" style="font-size: 12px; color: #c084fc;">90%</span>
+            </li>
+            <div style="height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;"><div style="width: 90%; height: 100%; background: #c084fc;"></div></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: PROFESSIONAL EXPERIENCE (Interactive Timeline)
+       ========================================================================== -->
+  <section id="experience" style="padding: 100px 0; background: rgba(13, 17, 26, 0.45); border-top: 1px solid var(--border-subtle);">
+    <div class="container-wide">
+      <div style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 48px;" id="exp-grid">
+        <!-- Section Intro -->
+        <div>
+          <div class="section-eyebrow">Career Milestone</div>
+          <h2 class="section-title">Field-Proven Industry Impact</h2>
+          <p class="section-desc" style="margin-bottom: 28px;">
+            Proven track record of turning business obstacles into standardized, scalable reporting workflows inside enterprise SAP environments.
+          </p>
+
+          <div class="glass-card" style="padding: 24px; border-left: 3px solid var(--gold-400);">
+            <div class="font-mono" style="font-size: 12px; color: var(--gold-400); margin-bottom: 6px;">CORE SPECIALTY</div>
+            <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
+              "Building reporting infrastructure that finance, warehouse, service, and executive managers can rely on without doubting numbers or enduring query timeouts."
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Card -->
+        <div>
+          <div class="glass-card" style="padding: 38px; border-top: 3px solid var(--gold-400);">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+              <div>
+                <span class="font-mono" style="font-size: 12px; color: var(--gold-400); font-weight: 600; text-transform: uppercase;">2023 — Present • Chennai, India</span>
+                <h3 class="font-serif" style="font-size: 28px; font-weight: 700; color: #fff; margin-top: 4px;">SAP Business One Consultant &amp; BI Developer</h3>
+                <div style="font-size: 15px; color: #cbd5e1; font-weight: 600; margin-top: 2px;">Avaniko Technologies Pvt. Ltd.</div>
+              </div>
+              <span class="badge-pill" style="border-color: rgba(201,160,80,0.4); color: var(--gold-300);">Full-Time</span>
+            </div>
+
+            <p style="font-size: 15px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 24px;">
+              Spearheading business intelligence solutions, database design, and end-to-end SAP Business One implementations on SAP HANA for diverse client accounts.
+            </p>
+
+            <!-- Detailed Impact Bullet List -->
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div style="width: 22px; height: 22px; border-radius: 50%; background: rgba(201, 160, 80, 0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                  <svg width="12" height="12" fill="none" stroke="var(--gold-400)" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p style="font-size: 14.5px; line-height: 1.6; color: #e2e8f0; margin: 0;">
+                  <strong style="color: #fff;">Advanced Crystal Reports &amp; SSRS Architecture:</strong> Designed and deployed 70+ complex enterprise reports with nested conditional grouping, parameter-driven dynamic layouts, barcode rendering, and multi-currency conversions.
+                </p>
+              </div>
+
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div style="width: 22px; height: 22px; border-radius: 50%; background: rgba(56, 189, 248, 0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                  <svg width="12" height="12" fill="none" stroke="var(--cyan-400)" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p style="font-size: 14.5px; line-height: 1.6; color: #e2e8f0; margin: 0;">
+                  <strong style="color: #fff;">SAP HANA SQL Query Engineering:</strong> Formulated optimized SQL &amp; PL-SQL procedures, analytical calculation views, and custom dynamic queries, reducing reporting batch latency by up to 65%.
+                </p>
+              </div>
+
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div style="width: 22px; height: 22px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                  <svg width="12" height="12" fill="none" stroke="#10b981" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p style="font-size: 14.5px; line-height: 1.6; color: #e2e8f0; margin: 0;">
+                  <strong style="color: #fff;">Automated Web Reporting Platform:</strong> Built interactive web dashboard utilities driven by live SAP queries, eliminating recurring manual reporting requests and boosting operational responsiveness.
+                </p>
+              </div>
+
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div style="width: 22px; height: 22px; border-radius: 50%; background: rgba(192, 132, 252, 0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                  <svg width="12" height="12" fill="none" stroke="#c084fc" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p style="font-size: 14.5px; line-height: 1.6; color: #e2e8f0; margin: 0;">
+                  <strong style="color: #fff;">WMS Inventory Synchronization:</strong> Integrated mobile WMS scanning feeds into SAP B1 inventory modules, crafting custom reconciliation queries for real-time stock-on-hand tracking across multiple bins and warehouses.
+                </p>
+              </div>
+
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div style="width: 22px; height: 22px; border-radius: 50%; background: rgba(201, 160, 80, 0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                  <svg width="12" height="12" fill="none" stroke="var(--gold-400)" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p style="font-size: 14.5px; line-height: 1.6; color: #e2e8f0; margin: 0;">
+                  <strong style="color: #fff;">Lifecycle Implementation &amp; DTW Migration:</strong> Governed complete data extraction, transform, and upload cycles through Data Transfer Workbench; facilitated user acceptance testing (UAT), end-user training, and post-go-live stabilization.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: KEY PROJECTS & CASE STUDIES
+       ========================================================================== -->
+  <section id="projects" style="padding: 100px 0;">
+    <div class="container-wide">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; gap: 20px;">
+        <div>
+          <div class="section-eyebrow">Enterprise Deliverables</div>
+          <h2 class="section-title">Selected Case Studies</h2>
+        </div>
+        <p class="section-desc" style="margin: 0;">
+          Click any project card to inspect the architectural flow, database methods, and measured operational outcome.
+        </p>
+      </div>
+
+      <!-- Project Category Filter Pills -->
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px;" id="project-filter-pills">
+        <button class="tab-btn active" onclick="filterProjects('all', this)">All Initiatives (4)</button>
+        <button class="tab-btn" onclick="filterProjects('reporting', this)">Reporting &amp; BI Dashboards</button>
+        <button class="tab-btn" onclick="filterProjects('wms', this)">WMS &amp; Real-Time Sync</button>
+        <button class="tab-btn" onclick="filterProjects('vertical', this)">Imaging Vertical</button>
+        <button class="tab-btn" onclick="filterProjects('sdlc', this)">Full-Cycle Implementations</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px;" id="project-cards-container">
+        
+        <!-- Project 1 -->
+        <div class="glass-card project-card" data-cat="reporting" style="padding: 32px; cursor: pointer; transition: all 0.35s ease;" onclick="openProjectModal(1)">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
+            <span class="font-mono" style="font-size: 12px; color: var(--gold-400); font-weight: 700;">01 // REPORTING ARCHITECTURE</span>
+            <span style="font-size: 11px; color: #38bdf8; background: rgba(56,189,248,0.1); border: 1px solid rgba(56,189,248,0.25); padding: 3px 8px; border-radius: 4px;">Web Dashboard</span>
+          </div>
+
+          <h3 class="font-serif" style="font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 12px;">Web-Based Reporting Suite</h3>
+          <p style="font-size: 14.5px; line-height: 1.65; color: var(--text-secondary); margin-bottom: 22px;">
+            A centralized web reporting platform powered by dynamic SQL queries on SAP HANA, liberating executive managers from manual Excel exports and static periodic reports.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Dynamic SQL</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">SAP HANA Views</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Web Dashboards</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">BI Automation</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 8px; color: var(--gold-400); font-size: 13px; font-weight: 700;">
+            <span>Inspect Technical Details</span>
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card" data-cat="wms" style="padding: 32px; cursor: pointer; transition: all 0.35s ease;" onclick="openProjectModal(2)">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
+            <span class="font-mono" style="font-size: 12px; color: var(--cyan-400); font-weight: 700;">02 // INTEGRATION &amp; LOGISTICS</span>
+            <span style="font-size: 11px; color: #10b981; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.25); padding: 3px 8px; border-radius: 4px;">WMS &amp; Real-Time</span>
+          </div>
+
+          <h3 class="font-serif" style="font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 12px;">WMS Integration &amp; Inventory Sync</h3>
+          <p style="font-size: 14.5px; line-height: 1.65; color: var(--text-secondary); margin-bottom: 22px;">
+            Complete integration between external mobile Warehouse Management System and SAP B1, crafting real-time bin tracking, batch valuation, and discrepancy alerts.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">WMS Connector</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Stock Visibility</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Batch Tracking</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Crystal Reports</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 8px; color: var(--cyan-400); font-size: 13px; font-weight: 700;">
+            <span>Inspect Technical Details</span>
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card project-card" data-cat="vertical" style="padding: 32px; cursor: pointer; transition: all 0.35s ease;" onclick="openProjectModal(3)">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
+            <span class="font-mono" style="font-size: 12px; color: #a855f7; font-weight: 700;">03 // VERTICAL SOLUTION</span>
+            <span style="font-size: 11px; color: #c084fc; background: rgba(192,132,252,0.1); border: 1px solid rgba(192,132,252,0.25); padding: 3px 8px; border-radius: 4px;">Industry Module</span>
+          </div>
+
+          <h3 class="font-serif" style="font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 12px;">Imaging Vertical Solution</h3>
+          <p style="font-size: 14.5px; line-height: 1.65; color: var(--text-secondary); margin-bottom: 22px;">
+            Customized healthcare and medical diagnostic imaging workflow configurations based on SAP B1 Service Contracts, Equipment Cards, and technician dispatch reporting.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Service Module</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Equipment Cards</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Billing Workflows</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">SSRS Reporting</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 8px; color: #c084fc; font-size: 13px; font-weight: 700;">
+            <span>Inspect Technical Details</span>
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card project-card" data-cat="sdlc" style="padding: 32px; cursor: pointer; transition: all 0.35s ease;" onclick="openProjectModal(4)">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
+            <span class="font-mono" style="font-size: 12px; color: #10b981; font-weight: 700;">04 // FULL-CYCLE ERP</span>
+            <span style="font-size: 11px; color: #10b981; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.25); padding: 3px 8px; border-radius: 4px;">Go-Live Success</span>
+          </div>
+
+          <h3 class="font-serif" style="font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 12px;">End-to-End Implementations</h3>
+          <p style="font-size: 14.5px; line-height: 1.65; color: var(--text-secondary); margin-bottom: 22px;">
+            Orchestrated blueprinting, schema customization (UDT/UDF), Data Transfer Workbench (DTW) migrations, UAT testing scripts, and on-site go-live user enablement.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Full Lifecycle</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">DTW Master Data</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">UAT Signoffs</span>
+            <span class="font-mono" style="font-size: 11px; background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px; color: #cbd5e1;">Post-Go-Live Support</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 8px; color: #10b981; font-size: 13px; font-weight: 700;">
+            <span>Inspect Technical Details</span>
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: INTERACTIVE LIVE "BI & HANA SQL STUDIO"
+       (Interactive Showcase Proving Deep Database Proficiency)
+       ========================================================================== -->
+  <section id="simulator" style="padding: 100px 0; background: rgba(8, 12, 20, 0.7); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container-wide">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 48px;">
+        <div class="section-eyebrow" style="justify-content: center;">Technical Demonstration</div>
+        <h2 class="section-title">Interactive SAP HANA &amp; SQL Studio</h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          Experience how I structure real-world SAP Business One queries to extract high-speed analytics across WMS bins, sales profit margins, and inventory turnover.
+        </p>
+      </div>
+
+      <!-- SQL Console UI -->
+      <div class="sql-console">
+        <!-- Top Toolbar -->
+        <div class="sql-bar">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div class="traffic-lights">
+              <span class="light-red"></span>
+              <span class="light-yellow"></span>
+              <span class="light-green"></span>
+            </div>
+            <span class="font-mono" style="font-size: 12px; color: #94a3b8;">HANA_STUDIO // Production_DB [Read-Only Analytical Pool]</span>
+          </div>
+
+          <!-- Select Query Buttons -->
+          <div style="display: flex; gap: 6px;">
+            <button class="tab-btn active" onclick="switchQuery('wms', this)">Query 1: WMS Stock Sync</button>
+            <button class="tab-btn" onclick="switchQuery('margin', this)">Query 2: Sales Margin</button>
+            <button class="tab-btn" onclick="switchQuery('aging', this)">Query 3: Stock Aging</button>
+          </div>
+        </div>
+
+        <!-- Query Code Editor Area -->
+        <div style="padding: 24px; background: #080c14; border-bottom: 1px solid #1a2233; position: relative;">
+          <pre id="sql-code-display" style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13.5px; line-height: 1.7; color: #e2e8f0; overflow-x: auto; white-space: pre-wrap;"></pre>
+
+          <div style="margin-top: 20px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 16px;">
+            <div style="display: flex; align-items: center; gap: 18px; font-size: 12px; color: var(--text-muted);">
+              <span>Engine: <strong style="color: var(--cyan-400);">SAP HANA Column Engine</strong></span>
+              <span>Optimizer: <strong style="color: #10b981;">Cost-Based Hash Join</strong></span>
+            </div>
+            <button onclick="runSimulatedQuery()" class="btn-gold" style="padding: 8px 18px; font-size: 12px; gap: 6px;" id="run-query-btn">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Execute (F5)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Simulated Execution Results & Output Matrix -->
+        <div style="padding: 24px; background: #0b101c;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span class="badge-pill" style="font-size: 10px; color: #10b981; border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.1);">EXECUTION STATUS: SUCCESS</span>
+              <span class="font-mono" id="query-metric-time" style="font-size: 12px; color: var(--text-secondary);">Latency: 11.4 ms</span>
+              <span class="font-mono" id="query-metric-rows" style="font-size: 12px; color: var(--text-secondary);">• Rows: 1,480</span>
+            </div>
+            <span class="font-mono" style="font-size: 11px; color: var(--gold-400);">Simulated Output Preview</span>
+          </div>
+
+          <!-- Dynamic Output Table Preview -->
+          <div style="overflow-x: auto;">
+            <table id="sql-results-table" style="width: 100%; border-collapse: collapse; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; text-align: left;">
+              <!-- Dynamic population -->
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: EDUCATION, CREDENTIALS & LANGUAGES
+       ========================================================================== -->
+  <section style="padding: 100px 0;">
+    <div class="container-wide">
+      <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px;" id="edu-grid">
+        
+        <!-- Education Journey -->
+        <div>
+          <div class="section-eyebrow">Academic Foundation</div>
+          <h2 class="section-title">Education &amp; Credentials</h2>
+
+          <div style="display: flex; flex-direction: column; gap: 24px; margin-top: 32px;">
+            <!-- Degree 1 -->
+            <div class="glass-card" style="padding: 28px; border-left: 3px solid var(--gold-400);">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                <h3 style="font-size: 19px; font-weight: 700; color: #fff;">Bachelor of Computer Applications (BCA)</h3>
+                <span class="font-mono" style="font-size: 12px; color: var(--gold-400);">2019 — 2022</span>
+              </div>
+              <p style="font-size: 14.5px; color: #cbd5e1; margin-bottom: 6px;">
+                Periyar Maniammai Institute of Science and Technology (PMIST), Thanjavur
+              </p>
+              <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
+                Focused on Database Management Systems (DBMS), Relational Schema Design, Object-Oriented Software Principles, and Advanced Algorithmic Thinking.
+              </p>
+            </div>
+
+            <!-- Schooling -->
+            <div class="glass-card" style="padding: 28px; border-left: 3px solid var(--cyan-400);">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                <h3 style="font-size: 18px; font-weight: 700; color: #fff;">Higher Secondary (HSC) &amp; SSLC</h3>
+                <span class="font-mono" style="font-size: 12px; color: var(--cyan-400);">2015 — 2019</span>
+              </div>
+              <p style="font-size: 14.5px; color: #cbd5e1; margin-bottom: 6px;">
+                Gandhi Matriculation Higher Secondary School, Thanjavur
+              </p>
+              <p style="font-size: 13px; color: var(--text-muted);">
+                Rigorous grounding in Mathematics, Computer Science, and Physics with academic excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages & Professional Attributes -->
+        <div>
+          <div class="section-eyebrow">Communication &amp; Mindset</div>
+          <h2 class="section-title">Languages &amp; Values</h2>
+
+          <div class="glass-card" style="padding: 30px; margin-top: 32px; margin-bottom: 24px;">
+            <h3 style="font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 16px;">Spoken &amp; Written Languages</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 6px;">
+                  <span style="font-weight: 600; color: #e2e8f0;">English</span>
+                  <span class="font-mono" style="color: var(--gold-400); font-size: 12px;">Full Professional Proficiency</span>
+                </div>
+                <div style="height: 6px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;">
+                  <div style="width: 95%; height: 100%; background: linear-gradient(90deg, var(--gold-500), var(--gold-300));"></div>
+                </div>
+              </div>
+
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 6px;">
+                  <span style="font-weight: 600; color: #e2e8f0;">Tamil</span>
+                  <span class="font-mono" style="color: var(--cyan-400); font-size: 12px;">Native / Bilingual Proficiency</span>
+                </div>
+                <div style="height: 6px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;">
+                  <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #0284c7, var(--cyan-400));"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Work Philosophy -->
+          <div class="glass-card" style="padding: 26px; border: 1px dashed rgba(201,160,80,0.35);">
+            <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 10px;">
+              <span style="font-size: 18px;">🎯</span>
+              <h4 style="font-size: 15px; font-weight: 700; color: var(--gold-300);">Operational Quality Principle</h4>
+            </div>
+            <p style="font-size: 13.5px; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+              "Never ship a report without cross-reconciling against General Ledger and Stock Valuation logs. True BI excellence lies in absolute reliability."
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: CONTACT & CALL TO ACTION
+       ========================================================================== -->
+  <section id="contact" style="padding: 110px 0; background: linear-gradient(180deg, rgba(7,9,14,0.4) 0%, #05070a 100%); border-top: 1px solid var(--border-subtle); position: relative;">
+    <div class="container-wide">
+      <div class="glass-card" style="padding: 60px 48px; border-radius: 28px; border: 1.5px solid var(--border-gold); background: radial-gradient(circle at 50% 0%, rgba(201,160,80,0.12) 0%, rgba(13,17,26,0.85) 70%);">
+        
+        <div style="text-align: center; max-width: 680px; margin: 0 auto 48px;">
+          <div class="section-eyebrow" style="justify-content: center;">Initiate Collaboration</div>
+          <h2 class="font-serif text-gradient-gold" style="font-size: clamp(36px, 4.8vw, 60px); font-weight: 700; line-height: 1.1; margin-bottom: 18px;">
+            Let’s Build High-Precision Reporting Together
+          </h2>
+          <p style="font-size: 17px; line-height: 1.7; color: #cbd5e1; margin: 0 auto;">
+            Available for Senior BI Developer, SAP Business One Consultant, Crystal Reports Specialist, and SQL Data Analyst roles.
+          </p>
+        </div>
+
+        <!-- Contact Cards Row -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 40px;">
+          
+          <!-- Email Card -->
+          <div class="glass-card" style="padding: 24px; text-align: center; border-radius: 16px;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(201,160,80,0.1); border: 1px solid var(--gold-400); display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;">
+              <svg width="20" height="20" fill="none" stroke="var(--gold-400)" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px;">Direct Email</div>
+            <a href="mailto:hari.saravanan1708@gmail.com" style="color: #fff; font-size: 14.5px; font-weight: 700; text-decoration: none; word-break: break-all;">
+              hari.saravanan1708@gmail.com
+            </a>
+            <div style="margin-top: 10px;">
+              <button onclick="copyToClipboard('hari.saravanan1708@gmail.com', 'Email copied to clipboard!')" style="background: none; border: none; color: var(--gold-400); font-size: 11.5px; cursor: pointer; text-decoration: underline; font-weight: 600;">Copy Email</button>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="glass-card" style="padding: 24px; text-align: center; border-radius: 16px;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(56,189,248,0.1); border: 1px solid var(--cyan-400); display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;">
+              <svg width="20" height="20" fill="none" stroke="var(--cyan-400)" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px;">Direct Phone / WhatsApp</div>
+            <a href="tel:+917010018929" style="color: #fff; font-size: 15px; font-weight: 700; text-decoration: none;">
+              +91 7010018929
+            </a>
+            <div style="margin-top: 10px;">
+              <a href="https://wa.me/917010018929" target="_blank" rel="noopener noreferrer" style="color: #10b981; font-size: 11.5px; text-decoration: none; font-weight: 600;">Message on WhatsApp</a>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="glass-card" style="padding: 24px; text-align: center; border-radius: 16px;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(168,85,247,0.1); border: 1px solid #a855f7; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;">
+              <svg width="20" height="20" fill="#a855f7" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24m1.4 9.74v-8.37H5.06v8.37z"/></svg>
+            </div>
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px;">LinkedIn Profile</div>
+            <a href="https://www.linkedin.com/in/hari-prasath-saravanan-96862b245/" target="_blank" rel="noopener noreferrer" style="color: #fff; font-size: 14px; font-weight: 700; text-decoration: none;">
+              in/hari-prasath-saravanan
+            </a>
+            <div style="margin-top: 10px;">
+              <a href="https://www.linkedin.com/in/hari-prasath-saravanan-96862b245/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan-400); font-size: 11.5px; text-decoration: none; font-weight: 600;">View Profile →</a>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="glass-card" style="padding: 24px; text-align: center; border-radius: 16px;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(16,185,129,0.1); border: 1px solid #10b981; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;">
+              <svg width="20" height="20" fill="none" stroke="#10b981" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px;">Base Location</div>
+            <div style="color: #fff; font-size: 14.5px; font-weight: 700;">
+              Chennai, Tamil Nadu, India
+            </div>
+            <div style="margin-top: 10px; font-size: 11.5px; color: var(--text-muted);">
+              Relocation / Remote Open
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Direct CTA Banner -->
+        <div style="text-align: center; border-top: 1px solid var(--border-subtle); padding-top: 36px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px;">
+          <a href="mailto:hari.saravanan1708@gmail.com?subject=Job%20Opportunity%20-%20BI%20Developer%20/%20SAP%20B1" class="btn-gold" style="font-size: 15px; padding: 14px 34px;">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+            <span>Send Direct Message</span>
+          </a>
+          <button onclick="window.print()" class="btn-outline" style="font-size: 14px; padding: 13px 26px;">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download PDF CV</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer style="padding: 40px 0; border-top: 1px solid var(--border-subtle); background: #05070a;">
+    <div class="container-wide" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span class="font-serif" style="font-size: 18px; font-weight: 700; color: var(--gold-300);">Hari Prasath S</span>
+        <span style="color: var(--text-muted); font-size: 13px;">•</span>
+        <span style="color: var(--text-muted); font-size: 13px;">BI Developer &amp; SAP Business One Consultant</span>
+      </div>
+
+      <div style="font-size: 12.5px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;">
+        Crafted with 240FPS Transitions &amp; Hardware Acceleration • 2026
+      </div>
+
+      <a href="#top" style="color: var(--gold-400); text-decoration: none; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+        <span>Back to Top</span>
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DIALOG FOR PROJECT DEEP DIVE
+       ========================================================================== -->
+  <div id="project-modal" style="position: fixed; inset: 0; z-index: 99999; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(5, 7, 12, 0.85); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);" onclick="closeProjectModal(event)">
+    <div class="glass-card" style="width: 100%; max-width: 680px; max-height: 90vh; overflow-y: auto; padding: 40px; border: 1.5px solid var(--gold-400); background: #0c101a; position: relative;" onclick="event.stopPropagation()">
+      <button onclick="closeProjectModal()" style="position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: all 0.2s;">
+        ✕
+      </button>
+
+      <div id="modal-eyebrow" class="section-eyebrow" style="color: var(--cyan-400);">CASE STUDY</div>
+      <h3 id="modal-title" class="font-serif" style="font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 16px;">Project Title</h3>
+      
+      <div id="modal-badge-container" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;"></div>
+
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 20px; margin-bottom: 20px;">
+        <h4 style="font-size: 14px; font-weight: 700; color: var(--gold-300); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">1. The Challenge</h4>
+        <p id="modal-challenge" style="font-size: 14.5px; line-height: 1.7; color: var(--text-secondary);"></p>
+      </div>
+
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 20px; margin-bottom: 20px;">
+        <h4 style="font-size: 14px; font-weight: 700; color: var(--cyan-400); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">2. Architectural Solution</h4>
+        <p id="modal-solution" style="font-size: 14.5px; line-height: 1.7; color: var(--text-secondary);"></p>
+      </div>
+
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 20px;">
+        <h4 style="font-size: 14px; font-weight: 700; color: #10b981; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">3. Measurable Impact</h4>
+        <p id="modal-impact" style="font-size: 14.5px; line-height: 1.7; color: var(--text-secondary);"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Element -->
+  <div id="toast">
+    <svg width="18" height="18" fill="none" stroke="#10b981" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- ==========================================================================
+       SCRIPTS: 240 FPS SMOOTH PARTICLES, DYNAMIC SQL STUDIO, CURSOR & MODALS
+       ========================================================================== -->
+  <script>
+    // --------------------------------------------------------------------------
+    // 1. KINETIC FLUID CURSOR (120-240 FPS Hardware-Accelerated Lerp)
+    // --------------------------------------------------------------------------
+    const cursorDot = document.getElementById('cursor-dot');
+    const cursorRing = document.getElementById('cursor-ring');
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let ringX = mouseX;
+    let ringY = mouseY;
+    let isHoveringInteractive = false;
+
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      cursorDot.style.left = `${mouseX}px`;
+      cursorDot.style.top = `${mouseY}px`;
+
+      // Pass mouse coordinates to glass cards for radial specular shine
+      document.querySelectorAll('.glass-card').forEach(card => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+        card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+      });
+    });
+
+    // 240 FPS requestAnimationFrame loop for spring follower
+    function renderCursor() {
+      const ease = 0.18;
+      ringX += (mouseX - ringX) * ease;
+      ringY += (mouseY - ringY) * ease;
+
+      cursorRing.style.left = `${ringX}px`;
+      cursorRing.style.top = `${ringY}px`;
+
+      requestAnimationFrame(renderCursor);
+    }
+    requestAnimationFrame(renderCursor);
+
+    // Interactive scale on links/buttons
+    document.querySelectorAll('a, button, .glass-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursorRing.style.width = '54px';
+        cursorRing.style.height = '54px';
+        cursorRing.style.borderColor = 'rgba(201, 160, 80, 0.9)';
+        cursorRing.style.backgroundColor = 'rgba(201, 160, 80, 0.08)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursorRing.style.width = '36px';
+        cursorRing.style.height = '36px';
+        cursorRing.style.borderColor = 'rgba(229, 195, 120, 0.5)';
+        cursorRing.style.backgroundColor = 'transparent';
+      });
+    });
+
+    // --------------------------------------------------------------------------
+    // 2. AMBIENT CONSTELLATION & DATABASE NODE CANVAS VISUALIZER
+    // --------------------------------------------------------------------------
+    const canvas = document.getElementById('ambient-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let particles = [];
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+      reset() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 0.45;
+        this.vy = (Math.random() - 0.5) * 0.45;
+        this.radius = Math.random() * 1.8 + 0.8;
+        this.color = Math.random() > 0.4 ? 'rgba(201, 160, 80, ' : 'rgba(56, 189, 248, ';
+        this.alpha = Math.random() * 0.5 + 0.2;
+      }
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        // Mouse gentle repulsion
+        const dx = mouseX - this.x;
+        const dy = mouseY - this.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          this.x -= (dx / dist) * 1.5;
+          this.y -= (dy / dist) * 1.5;
+        }
+
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = this.color + this.alpha + ')';
+        ctx.fill();
+      }
+    }
+
+    // Spawn 70 particles
+    const particleCount = Math.min(Math.floor(window.innerWidth / 18), 75);
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(new Particle());
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, width, height);
+
+      // Connect nodes
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < 130) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(201, 160, 80, ${0.15 * (1 - dist / 130)})`;
+            ctx.lineWidth = 0.8;
+            ctx.stroke();
+          }
+        }
+      }
+
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+
+      requestAnimationFrame(animateParticles);
+    }
+    requestAnimationFrame(animateParticles);
+
+    // --------------------------------------------------------------------------
+    // 3. LIVE SAP HANA & SQL STUDIO DATA
+    // --------------------------------------------------------------------------
+    const queries = {
+      wms: {
+        sql: `-- [SAP HANA] Live WMS Warehouse Stock Visibility by Bin & Batch
+SELECT 
+    T0."ItemCode", 
+    T0."ItemName", 
+    T1."WhsCode", 
+    T2."BinCode", 
+    T3."DistNumber" AS "BatchNum",
+    T4."OnHandQty",
+    T0."AvgPrice" * T4."OnHandQty" AS "TotalValuation"
+FROM "OITM" T0
+INNER JOIN "OITW" T1 ON T0."ItemCode" = T1."ItemCode"
+INNER JOIN "OBIN" T2 ON T1."WhsCode" = T2."WhsCode"
+INNER JOIN "OBTN" T3 ON T0."ItemCode" = T3."ItemCode"
+INNER JOIN "OBBQ" T4 ON T4."SnBMDAbs" = T3."AbsEntry" AND T4."BinAbs" = T2."AbsEntry"
+WHERE T4."OnHandQty" > 0 AND T1."WhsCode" IN ('WHS-CENTRAL', 'WHS-DISP')
+ORDER BY T0."ItemCode", T2."BinCode";`,
+        latency: '9.8 ms',
+        rows: '2,840',
+        columns: ['ItemCode', 'ItemName', 'WhsCode', 'BinCode', 'BatchNum', 'OnHandQty', 'TotalValuation (INR)'],
+        data: [
+          ['IM-MED-802', 'Ultrasound Transducer Probe 3.5MHz', 'WHS-CENTRAL', 'BIN-A1-04', 'BT-2026-X1', '42', '₹ 1,176,000'],
+          ['IM-MED-805', 'High-Res Digital Sensor V2', 'WHS-CENTRAL', 'BIN-A2-11', 'BT-2026-X8', '118', '₹ 2,832,000'],
+          ['IM-OPT-104', 'Precision Optical Coupler Lens', 'WHS-DISP', 'BIN-B4-02', 'BT-2025-Z9', '340', '₹ 816,000'],
+          ['SP-SEN-009', 'Piezoelectric Ceramic Resonator', 'WHS-DISP', 'BIN-C1-09', 'BT-2026-A4', '950', '₹ 427,500']
+        ]
+      },
+      margin: {
+        sql: `-- [SAP HANA] Dynamic Sales Gross Margin Analysis with Cost Variances
+SELECT 
+    T0."DocNum" AS "InvoiceNo",
+    T0."DocDate",
+    T0."CardName" AS "ClientName",
+    T1."ItemCode",
+    T1."Quantity",
+    T1."Price" AS "SoldUnitPrice",
+    T1."GrossBuyPr" AS "UnitCostPrice",
+    (T1."Price" - T1."GrossBuyPr") * T1."Quantity" AS "GrossProfitINR",
+    ROUND(((T1."Price" - T1."GrossBuyPr") / NULLIF(T1."Price", 0)) * 100, 2) AS "MarginPct"
+FROM "OINV" T0
+INNER JOIN "INV1" T1 ON T0."DocEntry" = T1."DocEntry"
+WHERE T0."DocDate" >= ADD_MONTHS(CURRENT_DATE, -1)
+  AND T0."CANCELED" = 'N'
+ORDER BY "GrossProfitINR" DESC;`,
+        latency: '14.2 ms',
+        rows: '5,120',
+        columns: ['InvoiceNo', 'DocDate', 'ClientName', 'ItemCode', 'Qty', 'Unit Price', 'Gross Profit', 'Margin %'],
+        data: [
+          ['INV-2026-4401', '2026-11-14', 'Apollo Diagnostics Ltd', 'IM-MED-802', '12', '₹ 38,000', '₹ 144,000', '31.58%'],
+          ['INV-2026-4409', '2026-11-16', 'Fortis Healthcare Network', 'IM-MED-805', '8', '₹ 32,500', '₹ 92,000', '35.38%'],
+          ['INV-2026-4415', '2026-11-18', 'Precision Imaging Diagnostics', 'IM-OPT-104', '40', '₹ 3,400', '₹ 48,000', '35.29%'],
+          ['INV-2026-4422', '2026-11-19', 'MedTech Regional Supplies', 'SP-SEN-009', '200', '₹ 650', '₹ 40,000', '30.77%']
+        ]
+      },
+      aging: {
+        sql: `-- [SAP HANA] Multi-Tier Inventory Aging Ledger with Non-Moving Stock Alerts
+SELECT 
+    T0."ItemCode",
+    T0."ItemName",
+    T0."OnHand" AS "CurrentStock",
+    DAYS_BETWEEN(MAX(T1."DocDate"), CURRENT_DATE) AS "DaysSinceLastMovement",
+    CASE 
+        WHEN DAYS_BETWEEN(MAX(T1."DocDate"), CURRENT_DATE) <= 30 THEN '0-30 Days (Fast)'
+        WHEN DAYS_BETWEEN(MAX(T1."DocDate"), CURRENT_DATE) <= 90 THEN '31-90 Days (Normal)'
+        WHEN DAYS_BETWEEN(MAX(T1."DocDate"), CURRENT_DATE) <= 180 THEN '91-180 Days (Slow)'
+        ELSE '180+ Days (Critical Stagnant)'
+    END AS "AgingBracket",
+    T0."OnHand" * T0."AvgPrice" AS "LockedCapitalINR"
+FROM "OITM" T0
+LEFT JOIN "OINM" T1 ON T0."ItemCode" = T1."ItemCode"
+WHERE T0."OnHand" > 0
+GROUP BY T0."ItemCode", T0."ItemName", T0."OnHand", T0."AvgPrice"
+ORDER BY "DaysSinceLastMovement" DESC;`,
+        latency: '11.8 ms',
+        rows: '890',
+        columns: ['ItemCode', 'ItemName', 'Current Stock', 'Days Idle', 'Aging Classification', 'Locked Capital (INR)'],
+        data: [
+          ['SP-CIR-402', 'High-Frequency Transformer Board', '150', '210 Days', '180+ Days (Critical Stagnant)', '₹ 345,000'],
+          ['OPT-FIB-011', 'Medical Grade Fiber Optic Bundle', '80', '135 Days', '91-180 Days (Slow)', '₹ 184,000'],
+          ['IM-SEN-112', 'Ultrasound Acoustic Coupler Block', '240', '48 Days', '31-90 Days (Normal)', '₹ 120,000'],
+          ['IM-MED-802', 'Ultrasound Transducer Probe 3.5MHz', '42', '4 Days', '0-30 Days (Fast)', '₹ 1,176,000']
+        ]
+      }
+    };
+
+    let currentQueryKey = 'wms';
+
+    function displayQuery(key) {
+      currentQueryKey = key;
+      const data = queries[key];
+      document.getElementById('sql-code-display').textContent = data.sql;
+      document.getElementById('query-metric-time').textContent = `Latency: ${data.latency}`;
+      document.getElementById('query-metric-rows').textContent = `• Rows: ${data.rows}`;
+
+      // Render table
+      const table = document.getElementById('sql-results-table');
+      let html = '<thead><tr style="border-bottom: 1.5px solid #1e283d; color: var(--gold-400);">';
+      data.columns.forEach(col => {
+        html += `<th style="padding: 10px 14px;">${col}</th>`;
+      });
+      html += '</tr></thead><tbody>';
+
+      data.data.forEach((row, idx) => {
+        const bg = idx % 2 === 0 ? 'rgba(255,255,255,0.015)' : 'transparent';
+        html += `<tr style="border-bottom: 1px solid rgba(255,255,255,0.04); background: ${bg};">`;
+        row.forEach(cell => {
+          html += `<td style="padding: 10px 14px; color: #cbd5e1;">${cell}</td>`;
+        });
+        html += '</tr>';
+      });
+      html += '</tbody>';
+      table.innerHTML = html;
+    }
+
+    function switchQuery(key, btn) {
+      playClickSFX(700, 'sine', 0.03);
+      document.querySelectorAll('.sql-bar .tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      displayQuery(key);
+    }
+
+    function runSimulatedQuery() {
+      playClickSFX(580, 'triangle', 0.08);
+      const btn = document.getElementById('run-query-btn');
+      btn.innerHTML = `<span>Executing...</span>`;
+      btn.style.opacity = '0.6';
+
+      setTimeout(() => {
+        btn.innerHTML = `<svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><span>Execute (F5)</span>`;
+        btn.style.opacity = '1';
+        displayQuery(currentQueryKey);
+        playChimeSFX();
+        showToast('Query compiled & executed on SAP HANA memory pool in 8.4ms!');
+      }, 350);
+    }
+
+    // Initialize first query
+    displayQuery('wms');
+
+    // --------------------------------------------------------------------------
+    // 4. CASE STUDY MODAL ENGINE
+    // --------------------------------------------------------------------------
+    const projectDetails = {
+      1: {
+        title: "Enterprise Web-Based Reporting Suite",
+        eyebrow: "BI AUTOMATION & REPORTING ARCHITECTURE",
+        badges: ["SAP Business One", "SAP HANA Views", "Dynamic SQL", "Web Dashboard API", "Automation"],
+        challenge: "Client business heads relied on manual spreadsheet exports from SAP B1, causing significant turnaround latency (2-4 hours per daily flash report) and high risks of formula errors and version discrepancies between sales and accounts.",
+        solution: "Engineered an automated web reporting suite with a secure service connector hooking directly into SAP HANA analytical views. Built dynamic SQL query templates with parameter injection for on-the-fly filtering by branch, fiscal period, and item group.",
+        impact: "Reduced routine reporting effort by 70%, lowered server resource overhead by replacing heavy GUI client sessions with lightweight indexed queries, and enabled instant mobile flash report access for executives."
+      },
+      2: {
+        title: "WMS Real-Time Sync & Stock Visibility",
+        eyebrow: "LOGISTICS & INVENTORY CONTROL",
+        badges: ["WMS Integration", "Crystal Reports", "Batch & Bin Tracking", "Live Reconciliation", "SAP HANA"],
+        challenge: "Discrepancies between physical warehouse bin counts scanned via handheld terminals and SAP B1 On-Hand quantities were causing dispatch delays and stockout surprises during audit rounds.",
+        solution: "Configured real-time transactional sync between the external WMS database and SAP B1 inventory tables (OITW, OBIN, OBBQ). Authored automated variance reconciliation reports in Crystal Reports and SSRS with auto-triggered email notifications for quantity mismatches.",
+        impact: "Achieved 99.8% physical-to-system stock accuracy across 3 primary distribution warehouses and cut stocktaking turnaround from 3 days to under 4 hours."
+      },
+      3: {
+        title: "Imaging Industry Vertical Implementation",
+        eyebrow: "HEALTHCARE & EQUIPMENT LIFECYCLE",
+        badges: ["Service Module", "Equipment Cards", "Contract Billing", "SSRS Reports", "Workflow Customization"],
+        challenge: "Medical diagnostic imaging equipment required complex warranty, Annual Maintenance Contract (AMC), and technician service scheduling tracking that standard off-the-shelf ERP screens could not model.",
+        solution: "Designed customized schemas using SAP B1 User-Defined Tables (UDTs) and Fields (UDFs) attached to Customer Equipment Cards. Formulated comprehensive service profitability and technician billing reports in SSRS.",
+        impact: "Streamlined warranty verification, prevented unbilled technician service calls, and delivered clear contract renewal forecasts to leadership."
+      },
+      4: {
+        title: "End-to-End Enterprise Implementations",
+        eyebrow: "FULL-CYCLE ERP DEPLOYMENT",
+        badges: ["Data Transfer Workbench (DTW)", "Business Blueprint", "UAT Signoffs", "Go-Live", "Post-Support"],
+        challenge: "Migrating decades of legacy data without business disruption, mapping disparate legacy item codes to standardized SAP numbering, and ensuring flawless user adoption at cutover.",
+        solution: "Governed full-cycle SAP Business One implementations from initial blueprinting through master data cleansing with Data Transfer Workbench (DTW). Wrote rigorous UAT test cases and conducted hands-on department training.",
+        impact: "Successfully delivered multiple implementations with on-schedule go-lives, zero master data corruption, and rapid user stabilization within 2 weeks of launch."
+      }
+    };
+
+    function openProjectModal(id) {
+      playClickSFX(920, 'sine', 0.05);
+      const data = projectDetails[id];
+      if (!data) return;
+
+      document.getElementById('modal-eyebrow').textContent = data.eyebrow;
+      document.getElementById('modal-title').textContent = data.title;
+      document.getElementById('modal-challenge').textContent = data.challenge;
+      document.getElementById('modal-solution').textContent = data.solution;
+      document.getElementById('modal-impact').textContent = data.impact;
+
+      const badgeContainer = document.getElementById('modal-badge-container');
+      badgeContainer.innerHTML = '';
+      data.badges.forEach(b => {
+        const span = document.createElement('span');
+        span.className = 'font-mono';
+        span.style.cssText = 'font-size: 11px; background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 4px; color: var(--gold-300);';
+        span.textContent = b;
+        badgeContainer.appendChild(span);
+      });
+
+      const modal = document.getElementById('project-modal');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal(e) {
+      playClickSFX(420, 'sine', 0.04);
+      const modal = document.getElementById('project-modal');
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeProjectModal();
+    });
+
+    // --------------------------------------------------------------------------
+    // 5. TOAST NOTIFICATION UTILITY
+    // --------------------------------------------------------------------------
+    let toastTimeout;
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3200);
+    }
+
+    function copyToClipboard(text, successMsg) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(successMsg || 'Copied to clipboard!');
+      }).catch(() => {
+        showToast('Copied: ' + text);
+      });
+    }
+
+    // --------------------------------------------------------------------------
+    // 6. NAVBAR SCROLL BLUR ENHANCER
+    // --------------------------------------------------------------------------
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 40) {
+        nav.style.background = 'rgba(7, 9, 14, 0.92)';
+        nav.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+      } else {
+        nav.style.background = 'rgba(7, 9, 14, 0.7)';
+        nav.style.boxShadow = 'none';
+      }
+    });
+
+    // --------------------------------------------------------------------------
+    // 7. PROJECT FILTERING ENGINE
+    // --------------------------------------------------------------------------
+    function filterProjects(cat, btn) {
+      playClickSFX(750, 'sine', 0.04);
+      const buttons = document.querySelectorAll('#project-filter-pills .tab-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const cards = document.querySelectorAll('#project-cards-container .project-card');
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-cat');
+        if (cat === 'all' || cardCat === cat) {
+          card.style.display = 'block';
+          requestAnimationFrame(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0) scale(1)';
+          });
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(14px) scale(0.97)';
+          setTimeout(() => {
+            if (card.style.opacity === '0') card.style.display = 'none';
+          }, 240);
+        }
+      });
+    }
+
+    // --------------------------------------------------------------------------
+    // 8. MOBILE NAVIGATION DRAWER
+    // --------------------------------------------------------------------------
+    function toggleMobileNav() {
+      playClickSFX(500, 'triangle', 0.05);
+      const drawer = document.getElementById('mobile-drawer');
+      if (drawer) {
+        drawer.classList.toggle('open');
+      }
+    }
+
+    // --------------------------------------------------------------------------
+    // 9. HIGH-FIDELITY WEB AUDIO SYNTHESIZER (TACTILE MICRO-SFX)
+    // --------------------------------------------------------------------------
+    let audioCtx = null;
+    let sfxEnabled = false;
+
+    function initAudio() {
+      if (!audioCtx) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (AudioContext) audioCtx = new AudioContext();
+      }
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    }
+
+    function playClickSFX(freq = 840, type = 'sine', duration = 0.04) {
+      if (!sfxEnabled) return;
+      try {
+        initAudio();
+        if (!audioCtx) return;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(freq * 0.45, audioCtx.currentTime + duration);
+
+        gain.gain.setValueAtTime(0.06, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    function playChimeSFX() {
+      if (!sfxEnabled) return;
+      try {
+        initAudio();
+        if (!audioCtx) return;
+        const now = audioCtx.currentTime;
+        const chord = [523.25, 659.25, 783.99, 1046.50];
+        chord.forEach((freq, idx) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.value = freq;
+          gain.gain.setValueAtTime(0, now + idx * 0.06);
+          gain.gain.linearRampToValueAtTime(0.045, now + idx * 0.06 + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + idx * 0.06 + 0.38);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now + idx * 0.06);
+          osc.stop(now + idx * 0.06 + 0.39);
+        });
+      } catch (e) {}
+    }
+
+    function toggleAudioSFX() {
+      sfxEnabled = !sfxEnabled;
+      const icon = document.getElementById('sfx-icon');
+      const status = document.getElementById('sfx-status');
+      if (sfxEnabled) {
+        initAudio();
+        if (icon) icon.textContent = '🔊';
+        if (status) status.textContent = 'SFX: ON';
+        playChimeSFX();
+        showToast('Tactile audio micro-effects enabled.');
+      } else {
+        if (icon) icon.textContent = '🔇';
+        if (status) status.textContent = 'SFX';
+        showToast('Audio muted.');
+      }
+    }
+
+    // Attach gentle clicks to interactive buttons
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('click', () => {
+          if (!el.getAttribute('onclick')?.includes('toggleAudioSFX') &&
+              !el.getAttribute('onclick')?.includes('runSimulatedQuery')) {
+            playClickSFX(680, 'sine', 0.03);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
