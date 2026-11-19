@@ -563,12 +563,12 @@
     <div class="container-wide" style="display: flex; align-items: center; justify-content: space-between; height: 74px;">
       <!-- Logo / Monogram -->
       <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-        <div style="width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, rgba(229,195,120,0.2) 0%, rgba(201,160,80,0.05) 100%); border: 1.5px solid var(--gold-400); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(201,160,80,0.25);">
-          <span class="font-serif" style="font-size: 20px; font-weight: 700; color: var(--gold-300);">HP</span>
+        <div style="width: 42px; height: 42px; border-radius: 10px; overflow: hidden; border: 1.5px solid var(--gold-400); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(201,160,80,0.25); flex-shrink: 0; background: #0c1017;">
+          <img src="assets/hari-portrait.jpg" alt="Hari Prasath S" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block;">
         </div>
         <div>
           <span style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 0.02em; display: block; line-height: 1.1;">Hari Prasath S</span>
-          <span class="font-mono" style="font-size: 10px; color: var(--gold-400); letter-spacing: 0.1em; text-transform: uppercase;">BI & SAP B1 Specialist</span>
+          <span class="font-mono" style="font-size: 10px; color: var(--gold-400); letter-spacing: 0.1em; text-transform: uppercase;">BI &amp; SAP B1 Specialist</span>
         </div>
       </a>
 
@@ -691,54 +691,80 @@
         <!-- Right Hero Visual: Holographic Executive Identity Card -->
         <div style="display: flex; justify-content: center; position: relative;">
           <!-- Ambient Glow Orb -->
-          <div style="position: absolute; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, rgba(201, 160, 80, 0.22) 0%, rgba(56, 189, 248, 0.08) 50%, transparent 70%); filter: blur(40px); pointer-events: none;"></div>
+          <div style="position: absolute; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(circle, rgba(201, 160, 80, 0.25) 0%, rgba(56, 189, 248, 0.1) 50%, transparent 70%); filter: blur(50px); pointer-events: none;"></div>
 
-          <div class="glass-card" style="width: 100%; max-width: 440px; padding: 32px; border-radius: 24px; border: 1px solid rgba(201, 160, 80, 0.25); box-shadow: 0 25px 60px rgba(0,0,0,0.7);">
-            <!-- Card Top Header -->
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
-              <div style="display: flex; align-items: center; gap: 14px;">
-                <div style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, #1e2638 0%, #0d121c 100%); border: 2px solid var(--gold-400); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 20px rgba(201,160,80,0.3);">
-                  <span class="font-serif" style="font-size: 30px; font-weight: 700; color: var(--gold-300);">HP</span>
-                </div>
-                <div>
-                  <h3 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 3px;">Hari Prasath S</h3>
-                  <p class="font-mono" style="font-size: 12px; color: var(--cyan-400);">Chennai, TN, India</p>
-                </div>
+          <div class="glass-card" style="width: 100%; max-width: 440px; padding: 22px; border-radius: 24px; border: 1.5px solid rgba(201, 160, 80, 0.35); box-shadow: 0 25px 60px rgba(0,0,0,0.7); position: relative;">
+            
+            <!-- Executive Portrait Frame with Cinematic Lighting -->
+            <div style="width: 100%; height: 310px; border-radius: 18px; overflow: hidden; position: relative; border: 1px solid rgba(201, 160, 80, 0.3); margin-bottom: 18px; box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6); background: #0c1017;">
+              <img src="assets/hari-portrait.jpg" alt="Hari Prasath S - Senior BI Developer & SAP Business One Consultant" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block; filter: contrast(1.05) brightness(1.02); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);">
+              
+              <!-- Cinematic Obsidian Gradient Overlay at Bottom of Image -->
+              <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(7, 9, 14, 0.95) 0%, rgba(7, 9, 14, 0.4) 38%, transparent 68%); pointer-events: none;"></div>
+              
+              <!-- Floating Top Badges -->
+              <div style="position: absolute; top: 12px; left: 12px; background: rgba(7, 9, 14, 0.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(16, 185, 129, 0.4); padding: 5px 12px; border-radius: 999px; display: flex; align-items: center; gap: 7px;">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981;"></span>
+                <span class="font-mono" style="font-size: 11px; font-weight: 700; color: #10b981; letter-spacing: 0.05em;">AVAILABLE / CONSULTING</span>
               </div>
-              <span class="font-mono" style="font-size: 11px; color: #10b981; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 10px; border-radius: 999px;">● ACTIVE</span>
+
+              <div style="position: absolute; top: 12px; right: 12px; background: rgba(7, 9, 14, 0.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(201, 160, 80, 0.4); padding: 5px 12px; border-radius: 999px;">
+                <span class="font-mono" style="font-size: 11px; font-weight: 700; color: var(--gold-300);">3+ YRS EXP</span>
+              </div>
+
+              <!-- Overlaid Bottom Title Inside Photo -->
+              <div style="position: absolute; bottom: 14px; left: 16px; right: 16px;">
+                <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 8px;">
+                  <h3 class="font-serif" style="font-size: 26px; font-weight: 700; color: #fff; line-height: 1.1; margin: 0; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">Hari Prasath S</h3>
+                  <span class="font-mono" style="font-size: 11px; color: var(--cyan-400);">Chennai, IN</span>
+                </div>
+                <div class="font-mono" style="font-size: 12px; color: var(--gold-400); margin-top: 3px; font-weight: 600; letter-spacing: 0.03em;">Senior BI Developer &amp; SAP B1 Consultant</div>
+              </div>
             </div>
 
-            <!-- Role Highlight -->
-            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 14px 16px; margin-bottom: 20px;">
-              <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px;">Current Role</div>
-              <div style="font-size: 14px; font-weight: 700; color: #fff;">SAP Business One Consultant</div>
-              <div style="font-size: 13px; color: var(--gold-400); margin-top: 2px;">Avaniko Technologies Pvt. Ltd. (2023 – Present)</div>
+            <!-- Role & Organization Highlight -->
+            <div style="background: rgba(255, 255, 255, 0.025); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 2px;">Organization</div>
+                <div style="font-size: 13.5px; font-weight: 700; color: #fff;">Avaniko Technologies Pvt. Ltd.</div>
+                <div style="font-size: 12px; color: var(--gold-400); margin-top: 1px;">SAP Business One Consultant (2023 – Present)</div>
+              </div>
+              <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(201, 160, 80, 0.1); border: 1px solid rgba(201, 160, 80, 0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="18" height="18" fill="none" stroke="var(--gold-400)" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              </div>
             </div>
 
             <!-- Stack Tags -->
-            <div style="margin-bottom: 24px;">
-              <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 10px;">Core Engineering Stack</div>
-              <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">SAP B1 HANA</span>
-                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">SQL / PL-SQL</span>
-                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">Crystal Reports</span>
-                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">SSRS</span>
-                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">WMS Sync</span>
-                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 4px 10px; border-radius: 6px; color: #93c5fd;">DTW Migration</span>
+            <div style="margin-bottom: 16px;">
+              <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 8px;">Specialized Production Stack</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 3px 8px; border-radius: 6px; color: #93c5fd;">SAP B1 HANA</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 3px 8px; border-radius: 6px; color: #93c5fd;">SQL / PL-SQL</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 3px 8px; border-radius: 6px; color: #93c5fd;">Crystal Reports</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 3px 8px; border-radius: 6px; color: #93c5fd;">SSRS</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 3px 8px; border-radius: 6px; color: #93c5fd;">WMS Sync</span>
+                <span style="font-size: 11px; font-weight: 600; background: #131b2e; border: 1px solid #1f2c4a; padding: 3px 8px; border-radius: 6px; color: #93c5fd;">DTW Migration</span>
               </div>
             </div>
 
             <!-- Fast Contact Row -->
-            <div style="border-top: 1px solid var(--border-subtle); padding-top: 18px; display: flex; justify-content: space-between; align-items: center;">
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 14px; display: flex; justify-content: space-between; align-items: center;">
               <div>
-                <span style="font-size: 11px; color: var(--text-muted); display: block;">Direct Mobile</span>
-                <a href="tel:+917010018929" style="font-size: 13px; font-weight: 700; color: #fff; text-decoration: none;">+91 7010018929</a>
+                <span style="font-size: 10px; color: var(--text-muted); display: block; text-transform: uppercase; letter-spacing: 0.05em;">Direct Mobile</span>
+                <a href="tel:+917010018929" style="font-size: 13.5px; font-weight: 700; color: #fff; text-decoration: none;">+91 7010018929</a>
               </div>
-              <button onclick="copyToClipboard('hari.saravanan1708@gmail.com', 'Email address copied!')" class="btn-outline" style="padding: 7px 12px; font-size: 11px; gap: 4px;">
-                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                <span>Copy Email</span>
-              </button>
+              <div style="display: flex; gap: 8px;">
+                <button onclick="copyToClipboard('hari.saravanan1708@gmail.com', 'Email copied!')" class="btn-outline" style="padding: 6px 11px; font-size: 11px; gap: 4px;" title="Copy Email">
+                  <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                  <span>Email</span>
+                </button>
+                <a href="https://www.linkedin.com/in/hari-prasath-saravanan-96862b245/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding: 6px 11px; font-size: 11px; gap: 4px;" title="LinkedIn Profile">
+                  <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24m1.4 9.74v-8.37H5.06v8.37z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
             </div>
+
           </div>
         </div>
 
