@@ -5,9 +5,11 @@
 
 ---
 
-## 🌐 Live Preview
-Once GitHub Pages is activated, your live site will be accessible at:  
-👉 **[https://harisaravanan1708-arch.github.io/realportfolio/](https://harisaravanan1708-arch.github.io/realportfolio/)**
+## 🌐 Live Website
+Your executive portfolio is officially live on Vercel:  
+👉 **[https://realportfolio-chi.vercel.app/](https://realportfolio-chi.vercel.app/)**
+
+*(Also accessible via GitHub Pages at: `https://harisaravanan1708-arch.github.io/realportfolio/`)*
 
 ---
 
